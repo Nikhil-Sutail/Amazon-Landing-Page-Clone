@@ -122,7 +122,7 @@ body {
     display: flex;
     align-items: center;
 
-    & i {}
+    /* & i {} */
 
     & select {
         background-color: transparent;
@@ -205,10 +205,216 @@ body {
 
 .hero-section > .hero-img {
     width: 100%;
-    height: ;
+    /* height: ; */
 
     & img{
         height: 100%;
         width: 100%;
+    }
+}
+
+.hero-section > .hero-content{
+    height: 6vh;
+    width: 90%;
+    margin: auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -100px;
+
+    & p{
+        color: #000;
+        text-align: center;
+    }
+}
+
+.product-boxes{
+    /* height: ; */
+    width: 100%;
+    padding: 20px 20px;
+    background-color: #E3E6E6;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    
+}
+
+.product-boxes > .product-box {
+    height: 70vh;
+    width: 23vw;
+    padding: 3vh;
+    background-color: #FFFFFF;
+
+    & h1{
+        height: 15%;
+        width: 100%;
+        color: #000;
+        font-size: 1.3rem;
+        /* border: 1px solid black; */
+    }
+
+    & .imgs{
+        height: 75%;
+        width: 100%;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+
+        & .img-section-1 {
+            display: flex;
+            gap: 20px;
+
+            & img{
+                height: 20vh;
+                width: 20vh;
+                /* border: 1px solid black; */
+                object-fit: fill;
+            }
+        }
+
+        & .img-section-2 {
+            display: flex;
+            gap: 20px;
+            
+            & img{
+                height: 20vh;
+                width: 20vh;
+                /* border: 1px solid black; */
+                object-fit: fill;
+            }
+        }
+    }
+
+    & p{
+        height: 10%;
+        width: 100%;
+        color: blue;
+        font-size: 1rem;
+        /* border: 1px solid black; */
+    }
+
+}
+
+.product-boxes > .product-box-2{
+    height: 50vh;
+    width: 100%;
+    padding: 3vh;
+    background-color: #FFFFFF;
+    /* border: 1px solid black; */
+
+    & .heading{
+        height: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        /* border: 1px solid black; */
+        
+        & h1{
+            color: #000;
+        }
+
+        & p{
+            color: blue;
+        }
+    }
+
+    & .imgs{
+        height: 90%;
+        width: 100%;
+        padding: 3vh 0px;
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid black; */
+
+        & img{
+            height: 100%;
+            width: 22vw;
+            object-fit: cover;
+        }
+    }
+}
+
+.footer > .back-to-top{
+    height: 8vh;
+    width: 100%;
+    background-color: #37485A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & p{
+        color: #fff;
+        font-size: small;
+        text-align: center;
+    }
+}
+
+.footer > .footer-lists{
+    /* height: ; */
+    width: 100%;
+    padding: 10vh 20vh;
+    background-color: #222F3E;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    & ul{
+        list-style-type: none;
+        /* height: ; */
+        width: 15vw;
+    }
+
+    & li{
+        margin: 8px 0px;
+        color: #DDDDDD;
+        font-size: 0.8rem;
+    }
+
+    & .list-heading{
+        color: #fff;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+}
+
+.footer > .footer-language{
+    /* height: ; */
+    width: 100%;
+    padding: 30px;
+    background-color: #222F3E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+
+    & img{
+        height: 11vh;
+    }
+
+    & select{
+        /* height: ; */
+        width: 8vw;
+        background-color: transparent;
+        color: #DDDDDD;
+        border: 2px solid #585F69;
+        outline: none;
+        padding: 10px;
+    }
+
+    & button{
+        /* height: ; */
+        width: 6vw;
+        background-color: transparent;
+        color: #DDDDDD;
+        border: 2px solid #585F69;
+        outline: none;
+        padding: 10px;
     }
 }
